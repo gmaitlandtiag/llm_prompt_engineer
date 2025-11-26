@@ -1,6 +1,6 @@
 # Practical Prompt Engineering
 
-The goal of this reference document is to prime/structurize prompt techniques to maximize the value add we can glean from LLMs. The LLMs we use in databricks/vscode/copilot are very powerful if structured effectively. Below are prompt techniques and examples we can use and reference as data professionals to increase our engineering velocity. Additional, some of these techniques can be combined. Additionally, feel free to jump to the specific section/technique you need.
+The goal of this reference document is to prime/structurize prompt techniques to maximize the value add we can glean from LLMs. The LLMs we use in databricks/vscode/copilot are very powerful if structured effectively. Below are prompt techniques and examples we can use and reference as data professionals to increase our engineering velocity. Additionally, some of these techniques can be combined feel free to jump to the specific section/technique you need.
 
 ## Quick Reference Table
 
