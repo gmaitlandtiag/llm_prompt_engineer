@@ -410,6 +410,11 @@ For production systems:
 
 ---
 
+### A/B Testing LLMS
+
+LLMs have different attributes: token limits, active parameters, context window length, response latency, pricing, and reasoning capabilities. To get the best response, you often need to evaluate outputs across multiple models. For example, you can input the same prompt into GPT-5, Sonnet 4, and or Gemini 3. Then select the best response for your specific use case. Model tunes change by the day (sometimes by the hour) so getting the most of LLMs requires A/B testing as another skill
+
+---
 
 ---
 
