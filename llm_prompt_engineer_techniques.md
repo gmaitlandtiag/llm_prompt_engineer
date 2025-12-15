@@ -197,9 +197,7 @@ answer isn't in the context, say "Information not found in provided context."
 [Background information]
 
 ### Data ###
-```
 [Your actual data]
-```
 
 ### Output Requirements ###
 [Format specifications]
@@ -307,9 +305,7 @@ as a markdown table, and the quality checks as pytest assertions.
 ```
 I'm getting this error in my Databricks job:
 
-```
 [Paste full error message and stack trace]
-```
 
 Job context:
 - Runtime: Databricks Runtime 13.3 LTS
@@ -435,4 +431,4 @@ This is a living document. PRs welcome for:
 
 ---
 
-*Last updated: December 14 2025*
+*Last updated: December 15 2025*
