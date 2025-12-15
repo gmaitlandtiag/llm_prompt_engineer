@@ -1,6 +1,6 @@
 # Practical Prompt Engineering
 
-The goal of this reference document is to prime/structurize prompt techniques to maximize the value add we can glean from LLMs. The LLMs we use in databricks/vscode/copilot are very powerful if structured effectively. Below are prompt techniques and examples we can use and reference as data professionals to increase our engineering velocity. Additionally, some of these techniques can be combined feel free to jump to the specific section/technique you need.
+The goal of this reference document is to prime/structurize prompt techniques to maximize the value add we can glean from LLMs. The LLMs we use in databricks/vscode/copilot are very powerful if queries are structured effectively. Below are prompt techniques and examples we can use and reference as data professionals to increase our engineering velocity. Additionally, some of these techniques can be combined so feel free to jump to the specific section/technique you need.
 
 ## Quick Reference Table
 
@@ -27,7 +27,7 @@ The goal of this reference document is to prime/structurize prompt techniques to
 
 1. **Over-engineering:** Longer prompts aren't always better. Start simple, add complexity only when needed.
 
-2. **Vague instructions:** "Make it better" fails. "Improve readability by using descriptive variable names and adding docstrings" succeeds.
+2. **Vague instructions:** Telling the model, "Make it better" fails. Whereas, "Improve readability by using descriptive variable names and adding docstrings" succeeds.
 
 3. **Ignoring format:** If you need JSON, ask for JSON explicitly. Don't assume the model will guess your needs.
 
@@ -41,7 +41,7 @@ The goal of this reference document is to prime/structurize prompt techniques to
 
 > Below are the Full Prompt Engineering Techniques:
 
- Prompt engineering is the practice of crafting inputs to get the best possible results from large language models (LLMs). For data/system engineers/analysts/stewards working with LLMs in production pipelines—whether for data extraction, classification, code generation, or analysis—the difference between a mediocre prompt and a well-crafted one can mean outputs you can trust vs. constant manual intervention/refactoring.
+ Prompt engineering is the practice of crafting inputs to get the best possible outputs from large language models (LLMs) [GIGO - Garbage In, Garbage Out]. For data/system engineers/analysts/stewards working with LLMs in production pipelines—whether for data extraction, classification, code generation, or analysis—the difference between a mediocre prompt and a well-crafted one can mean outputs you can trust vs. constant manual intervention/refactoring/reprompting.
 
 
 ---
@@ -81,9 +81,9 @@ Example 2:
 Input: "Category 4 hurricane making landfall, evacuation ordered"
 Output: {"disaster_type": "hurricane", "severity": "severe", "location": "coastal"}
 
-Now classify:
+Now the model can effectively classify:
 Input: "Minor earthquake felt, no structural damage reported"
-Output:
+Output: 
 ```
 
 > **💡 Pro tip:** Research shows that the format and label distribution of your examples matters more than whether individual example labels are perfectly correct. Consistency is key.
@@ -136,7 +136,7 @@ You are a senior data engineer with 30 years of experience in
 distributed systems and data pipeline optimization. You specialize 
 in Databricks and PySpark.
 
-[Your question here]
+[The rest of your query here]
 ```
 
 **Why it works:** Role prompting activates domain-specific knowledge patterns from training and shapes the tone, vocabulary, and depth of responses.
@@ -346,7 +346,7 @@ Return as Great Expectations or Pydantic validation code.
 
 **Disaster Classification:**
 ```
-You are a 20 year disaster response data analyst. Classify the following 
+You are a 20 year disaster response data scientist. Classify the following 
 incident reports into FEMA disaster categories.
 
 Categories: Hurricane, Flood, Tornado, Earthquake, Fire, Winter Storm, Other
@@ -412,7 +412,7 @@ For production systems:
 
 ### A/B Testing LLMS
 
-LLMs have different attributes: token limits, active parameters, context window length, response latency, pricing, and reasoning capabilities. To get the best response, you often need to evaluate outputs across multiple models. For example, you can input the same prompt into GPT-5, Sonnet 4, and or Gemini 3. Then select the best response for your specific use case. Model tunes change by the day (sometimes by the hour) so getting the most of LLMs requires A/B testing as another skill
+LLMs have different attributes: token limits, active parameters, context window length, response latency, pricing, and reasoning capabilities. To get the best response, you often need to evaluate outputs across multiple models. For example, you can input the same prompt into GPT-5, Sonnet 4, and or Gemini 3. Then select the best response for your specific use case. Model tunes change by the day (sometimes by the hour) so getting the most of LLMs requires A/B testing as another skill.
 
 ---
 
@@ -435,4 +435,4 @@ This is a living document. PRs welcome for:
 
 ---
 
-*Last updated: November 2025*
+*Last updated: December 14 2025*
