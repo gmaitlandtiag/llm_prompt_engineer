@@ -412,6 +412,13 @@ LLMs have different attributes: token limits, active parameters, context window 
 
 ---
 
+### Model Routing
+
+The UI/UX of some programs copilot/chatgpt default to model routing and/or to a lower capable model. This is a design to keep LLM capability utilization low.
+
+**Model Routing**
+Copilot in VSCode and Chatgpt's web application use a feature called `model routing`. Essentially, when a user submits a query, the query is parsed for parameters: quantity of tokens, large words, keywords, references to historial details in the chat history, tool calls. The query is then routed to either a less capable model for simple/non complex queries, or routed to a more capable model for complex queries. It is important to note that these routers are not always accurate and sometimes can misroute. They will route your complex query to a less capable model, which in turn will give you a less capable result/solution. To address this, it is recommended when working on a complex project, to select your capable model at the start of the session.
+
 ---
 
 ## Contributing
